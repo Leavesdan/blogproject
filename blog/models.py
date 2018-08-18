@@ -88,8 +88,8 @@ class Post(models.Model):
         if not self.excerpt:
             # 首先实例化一个 Markdown 类，用于渲染 body 的文本
             md = markdown.Markdown(extensions=[
-                'markdown.exntensions.extra',
-                'markdown.exntensions.codehilite',
+                'markdown.extensions.extra',
+                'markdown.extensions.codehilite',
             ])
             # 先将 Markdown 文本渲染成 HTML 文本
             # strip_tags 去掉 HTML 文本的全部 HTML 标签
